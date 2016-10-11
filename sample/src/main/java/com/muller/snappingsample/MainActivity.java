@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends Activity {
-    private SnappingRecyclerView mSnappingRecyclerView;
+    public SnappingRecyclerView mSnappingRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 
         mSnappingRecyclerView = (SnappingRecyclerView)findViewById(android.R.id.list);
         mSnappingRecyclerView.enableViewScaling(true);
+        mSnappingRecyclerView.setAnimation(null);
     }
 
     @Override
